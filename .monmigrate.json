@@ -1,0 +1,14 @@
+{
+  "collection": "_migrations",
+  "dbs": [
+    "dbname"
+  ],
+  "host": "localhost",
+  "models": "./models",
+  "serverURL-example": "mongodb://user:pass@localhost:27017",
+  "serverURL": "mongodb://localhost:27017",
+  "passwd": "",
+  "port": "27017",
+  "root": "./migrations",
+  "user": ""
+}

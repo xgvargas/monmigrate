@@ -1,0 +1,52 @@
+{
+  "name": "monmigrate",
+  "version": "0.1.0",
+  "description": "MongoDB schema migrations helper",
+  "scripts": {
+    "prepublish": "npm run build",
+    "build": "coffee -cbto build src",
+    "dev": "coffee -cwbto build src"
+  },
+  "author": "Gustavo Vargas <xgvargas@gmail.com>",
+  "license": "MIT",
+  "preferGlobal": true,
+  "bin": {
+    "monmigrate": "./bin/monmigrate"
+  },
+  "dependencies": {
+    "bluebird": "^3.5.1",
+    "mongodb": "^3.0.1",
+    "shifting": "^1.2.6",
+    "yargs": "^10.1.1",
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "coffeescript": "^2.1.1"
+  },
+  "devDependencies": {
+  },
+  "engines": {
+    "node": ">=6"
+  },
+  "babel": {
+    "presets": [
+      [
+        "env",
+        {
+          "targets": {
+            "node": "6"
+          },
+          "useBuiltIns": false
+        }
+      ]
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:xgvargas/monmigrate.git"
+  },
+  "bugs": {
+    "url": "https://github.com/xgvargas/monmigrate/issues"
+  },
+  "homepage": "https://github.com/xgvargas/monmigrate#monmigrate",
+  "keywords": []
+}
